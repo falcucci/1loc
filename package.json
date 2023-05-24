@@ -5,11 +5,12 @@
   "description": "Browse JavaScript Utilities from 1loc.dev",
   "icon": "command-icon.png",
   "author": "kud",
+  "contributors": [
+    "sxn",
+    "falcucci"
+  ],
   "categories": [
     "Developer Tools"
-  ],
-  "contributors": [
-    "sxn"
   ],
   "license": "MIT",
   "commands": [
@@ -23,11 +24,11 @@
   ],
   "preferences": [
     {
+      "description": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token",
       "name": "personalAccessToken",
-      "type": "password",
       "required": false,
       "title": "Personal Access Token",
-      "description": "https://docs.github.com/en/authentication/keeping-your-account-and-data-secure/creating-a-personal-access-token"
+      "type": "password"
     }
   ],
   "dependencies": {

@@ -23,7 +23,7 @@ const useSnippet = (categoryName: string, name: string): [ISnippet | null, boole
     const fetchSnippet = async () => {
       cancelRef.current?.cancel()
       cancelRef.current = axios.CancelToken.source()
-      const url = `https://api.github.com/repositories/251039251/contents/snippets/${categoryName}/${name}`
+      const url = `https://api.github.com/repositories/251039251/contents/snippets/${categoryName}/${name}?ref=2d3fecb65bef3f7570034b26617b23356e14b6b9`
       const config = {
         cancelToken: cancelRef.current?.token,
         headers: personalAccessToken ? { Authorization: `token ${personalAccessToken}` } : undefined,
